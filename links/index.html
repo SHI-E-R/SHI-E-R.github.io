@@ -286,6 +286,8 @@
     
   </section>
 
+{% elseif theme.changyan.appid and theme.changyan.appkey %}
+<div id="SOHUCS"></div>
 
 
 
@@ -350,8 +352,8 @@ var gitment = new Gitment({
   // https://github.com/imsun/gitment/issues/55
   // 解决方案：id:window.location.pathname,或者将id设置为当前页面标题
   id: '友情链接', 
-  owner: 'SHI-E-R', // 可以是你的GitHub用户名，也可以是github id
-  repo: 'SHI-E-R.github.io',
+  owner: 'shi-e-r', // 可以是你的GitHub用户名，也可以是github id
+  repo: 'shi-e-r.github.io',
   oauth: {
     client_id: 'a9df49bbb0156c1f503d',
     client_secret: '91b0ac5165a0fd5338b97d83b8ee3064a11aecae',

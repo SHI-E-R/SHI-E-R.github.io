@@ -424,7 +424,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://shi-e-r.github.io/2020/04/26/%E5%88%A9%E7%94%A8canvas%E7%8E%A9%E8%BD%AC%E5%9B%BE%E7%89%87/" title="利用canvas玩转图片" target="_blank" rel="external">https://shi-e-r.github.io/2020/04/26/%E5%88%A9%E7%94%A8canvas%E7%8E%A9%E8%BD%AC%E5%9B%BE%E7%89%87/</a>
+      <a href="https://shi-e-r.github.io/2020/04/26/%E5%88%A9%E7%94%A8canvas%E7%8E%A9%E8%BD%AC%E5%9B%BE%E7%89%87/" title="利用canvas玩转图片" target="_blank" rel="external" style="word-break: break-all">https://shi-e-r.github.io/2020/04/26/%E5%88%A9%E7%94%A8canvas%E7%8E%A9%E8%BD%AC%E5%9B%BE%E7%89%87/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -461,6 +461,8 @@
     
   </section>
 
+{% elseif theme.changyan.appid and theme.changyan.appkey %}
+<div id="SOHUCS"></div>
 
   
 </div>
@@ -605,8 +607,8 @@ var gitment = new Gitment({
   // https://github.com/imsun/gitment/issues/55
   // 解决方案：id:window.location.pathname,或者将id设置为当前页面标题
   id: '利用canvas玩转图片', 
-  owner: 'SHI-E-R', // 可以是你的GitHub用户名，也可以是github id
-  repo: 'SHI-E-R.github.io',
+  owner: 'shi-e-r', // 可以是你的GitHub用户名，也可以是github id
+  repo: 'shi-e-r.github.io',
   oauth: {
     client_id: 'a9df49bbb0156c1f503d',
     client_secret: '91b0ac5165a0fd5338b97d83b8ee3064a11aecae',

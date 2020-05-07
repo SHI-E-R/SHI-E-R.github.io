@@ -299,7 +299,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://shi-e-r.github.io/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/" title="随记：当前时间（小时）在一天或者跨天时间区间内的比较" target="_blank" rel="external">https://shi-e-r.github.io/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/</a>
+      <a href="https://shi-e-r.github.io/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/" title="随记：当前时间（小时）在一天或者跨天时间区间内的比较" target="_blank" rel="external" style="word-break: break-all">https://shi-e-r.github.io/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -336,6 +336,8 @@
     
   </section>
 
+{% elseif theme.changyan.appid and theme.changyan.appkey %}
+<div id="SOHUCS"></div>
 
   
 </div>
@@ -480,8 +482,8 @@ var gitment = new Gitment({
   // https://github.com/imsun/gitment/issues/55
   // 解决方案：id:window.location.pathname,或者将id设置为当前页面标题
   id: '随记：当前时间（小时）在一天或者跨天时间区间内的比较', 
-  owner: 'SHI-E-R', // 可以是你的GitHub用户名，也可以是github id
-  repo: 'SHI-E-R.github.io',
+  owner: 'shi-e-r', // 可以是你的GitHub用户名，也可以是github id
+  repo: 'shi-e-r.github.io',
   oauth: {
     client_id: 'a9df49bbb0156c1f503d',
     client_secret: '91b0ac5165a0fd5338b97d83b8ee3064a11aecae',
