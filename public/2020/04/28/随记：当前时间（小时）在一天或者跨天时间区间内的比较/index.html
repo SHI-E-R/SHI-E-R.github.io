@@ -21,16 +21,16 @@
   <meta name="description" content="当前时间（小时）在一天或者跨天时间区间内的比较主要思路是转换成date格式进行比较，废话不多说上代码 1234567891011121314151617181920212223242526&#x2F;&#x2F; 以 8:00-17:00 为例const testTime &#x3D; &#39;8:00-17:00&#39;const date &#x3D; new Date()const hour &#x3D; date.getHours()const mi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="随记：当前时间（小时）在一天或者跨天时间区间内的比较">
-<meta property="og:url" content="http://yoursite.com/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/index.html">
+<meta property="og:url" content="https://shi-e-r.github.io/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="当前时间（小时）在一天或者跨天时间区间内的比较主要思路是转换成date格式进行比较，废话不多说上代码 1234567891011121314151617181920212223242526&#x2F;&#x2F; 以 8:00-17:00 为例const testTime &#x3D; &#39;8:00-17:00&#39;const date &#x3D; new Date()const hour &#x3D; date.getHours()const mi">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-04-28T06:50:37.187Z">
 <meta property="article:modified_time" content="2020-04-28T06:50:37.188Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="shier">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/index.html">
+  <link rel="canonical" href="https://shi-e-r.github.io/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -56,7 +56,7 @@
       
       
       <div class="profile-block text-center">
-        <a id="avatar" href="https://github.com/cofess" target="_blank">
+        <a id="avatar" href="https://github.com/SHI-E-R" target="_blank">
           <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
         </a>
         <h2 id="name" class="hidden-xs hidden-sm">shier</h2>
@@ -66,27 +66,14 @@
       
       <div class="search" id="search-form-wrap">
 
-    <form class="search-form sidebar-form">
-        <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="搜索" />
-            <span class="input-group-btn">
-                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
-            </span>
-        </div>
-    </form>
-    <div class="ins-search">
-  <div class="ins-search-mask"></div>
-  <div class="ins-search-container">
-    <div class="ins-input-wrapper">
-      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
-      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    <form class="search-form sidebar-form" method="GET" action="https://www.baidu.com/s?">
+	<div class="input-group">
+    	<input name="wd" type="text" class="form-control search-form-input" placeholder="搜索" />
+	    <span class="input-group-btn">
+	    	<button type="submit" class=" btn btn-flat search-form-submit"><i class="icon icon-search"></i></button>
+	    </span>
     </div>
-    <div class="ins-section-wrapper">
-      <div class="ins-section-container"></div>
-    </div>
-  </div>
-</div>
-
+</form>
 
 </div>
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
@@ -136,26 +123,6 @@
             <i class="icon icon-tags"></i>
             
             <span class="menu-title">标签</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-repository">
-          <a href="/repository">
-            
-            <i class="icon icon-project"></i>
-            
-            <span class="menu-title">项目</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-books">
-          <a href="/books">
-            
-            <i class="icon icon-book-fill"></i>
-            
-            <span class="menu-title">书单</span>
           </a>
         </li>
         
@@ -314,11 +281,6 @@
 	</span>
 
 
-	<span class="article-read hidden-xs">
-    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
-    	<span id="/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/" class="leancloud_visitors"  data-flag-title="随记：当前时间（小时）在一天或者跨天时间区间内的比较">0</span>
-    </span>
-
         <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/#comments" class="article-comment-link">评论</a></span>
         
       </div>
@@ -337,7 +299,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/" title="随记：当前时间（小时）在一天或者跨天时间区间内的比较" target="_blank" rel="external">http://yoursite.com/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/</a>
+      <a href="https://shi-e-r.github.io/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/" title="随记：当前时间（小时）在一天或者跨天时间区间内的比较" target="_blank" rel="external">https://shi-e-r.github.io/2020/04/28/%E9%9A%8F%E8%AE%B0%EF%BC%9A%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4%EF%BC%88%E5%B0%8F%E6%97%B6%EF%BC%89%E5%9C%A8%E4%B8%80%E5%A4%A9%E6%88%96%E8%80%85%E8%B7%A8%E5%A4%A9%E6%97%B6%E9%97%B4%E5%8C%BA%E9%97%B4%E5%86%85%E7%9A%84%E6%AF%94%E8%BE%83/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -351,12 +313,12 @@
   <div class="panel-body">
     <figure class="media">
       <div class="media-left">
-        <a href="https://github.com/cofess" target="_blank" class="img-burn thumb-sm visible-lg">
+        <a href="https://github.com/SHI-E-R" target="_blank" class="img-burn thumb-sm visible-lg">
           <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="https://github.com/cofess" target="_blank"><span class="text-dark">shier</span><small class="ml-1x">Web Developer &amp; Mini Programs</small></a></h3>
+        <h3 class="media-heading"><a href="https://github.com/SHI-E-R" target="_blank"><span class="text-dark">shier</span><small class="ml-1x">Web Developer &amp; Mini Programs</small></a></h3>
         <div>个人简介。</div>
       </div>
     </figure>
@@ -488,26 +450,16 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <script src="/js/application.js"></script>
 
 
+
     <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(未命名)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:shi-e-r.github.io ' + keyword;
+        return false;
+    });
+})(jQuery);
 </script>
-
-<script src="/js/insight.js"></script>
-
-
 
 
 
@@ -516,96 +468,6 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-
-<!-- custom analytics part create by xiamo -->
-<script defer src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
-<script defer>
-AV.init({
-  appId: '',
-  appKey: ''
-});
-
-function showTime(Counter) {
-	var query = new AV.Query(Counter);
-		var visitors= $('.leancloud_visitors');
-		query.greaterThanOrEqualTo("time", 0);		
-		query.find({
-			success: function(results) {
-				if (results.length == 0) {				
-					return;
-				}
-				var data = results;
-				visitors.each(function(){
-					var url = $(this).attr('id').trim();					
-					for (var i = 0; i < data.length; i++) {
-						var object = data[i];
-						var content = object.get('time');
-						var _url = object.get('url')
-						if(url == _url){
-							$(this).text(content);
-						}
-					}
-				})
-				
-			},
-			error: function(object, error) {
-				console.log("Error: " + error.code + " " + error.message);
-			}
-		});
-}
-
-function addCount(Counter) {
-	var Counter = AV.Object.extend("Counter");
-	url = $(".leancloud_visitors").attr('id').trim();
-	title = $(".leancloud_visitors").attr('data-flag-title').trim();
-	var query = new AV.Query(Counter);
-	query.equalTo("url", url);
-	query.find({
-		success: function(results) {
-			if (results.length > 0) {
-				var counter = results[0];
-				counter.fetchWhenSave(true);
-				counter.increment("time");
-				counter.save(null, {
-					success: function(counter) {
-						var content = counter.get('time');
-						$(document.getElementById(url)).text(content);
-					},
-					error: function(counter, error) {
-						console.log('Failed to save Visitor num, with error message: ' + error.message);
-					}
-				});
-			} else {
-				var newcounter = new Counter();
-				newcounter.set("title", title);
-				newcounter.set("url", url);
-				newcounter.set("time", 1);
-				newcounter.save(null, {
-					success: function(newcounter) {
-					    console.log("newcounter.get('time')="+newcounter.get('time'));
-						var content = newcounter.get('time');
-						$(document.getElementById(url)).text(content);
-					},
-					error: function(newcounter, error) {
-						console.log('Failed to create');
-					}
-				});
-			}
-		},
-		error: function(error) {
-			console.log('Error:' + error.code + " " + error.message);
-		}
-	});
-}
-$(function() {
-	var Counter = AV.Object.extend("Counter");
-	if ($('.leancloud_visitors').length == 1) {
-		addCount(Counter);
-	} else {
-		showTime(Counter);
-	}
-}); 
-</script>
 
 
 
@@ -621,8 +483,8 @@ var gitment = new Gitment({
   owner: 'SHI-E-R', // 可以是你的GitHub用户名，也可以是github id
   repo: 'SHI-E-R.github.io',
   oauth: {
-    client_id: '',
-    client_secret: '',
+    client_id: 'a9df49bbb0156c1f503d',
+    client_secret: '91b0ac5165a0fd5338b97d83b8ee3064a11aecae',
   }
 })
 gitment.render('comments')
