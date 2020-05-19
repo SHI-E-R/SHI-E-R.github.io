@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shi-e-r.github.io/"/>
-  <updated>2020-05-09T10:31:44.154Z</updated>
+  <updated>2020-05-19T09:50:47.614Z</updated>
   <id>https://shi-e-r.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Typora语法及快捷键</title>
+    <link href="https://shi-e-r.github.io/2020/05/19/Typora%E8%AF%AD%E6%B3%95%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>https://shi-e-r.github.io/2020/05/19/Typora%E8%AF%AD%E6%B3%95%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
+    <published>2020-05-19T09:47:13.000Z</published>
+    <updated>2020-05-19T09:50:47.614Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p>/# 一阶标题 或者快捷键ctrl+1</p><p><code>## 二阶标题 或者快捷键ctrl+2</code> </p><p><code>### 三阶标题 或者快捷键ctrl+3</code> </p><p><code>#### 四阶标题 或者快捷键ctrl+4</code> </p><p><code>##### 五阶标题 或者快捷键ctrl+5</code> </p><p><code>###### 六阶标题 或者快捷键ctrl+6</code> </p><p>（#后面接空格）</p><h4 id="文本样式"><a href="#文本样式" class="headerlink" title="文本样式"></a>文本样式</h4><h5 id="居中"><a href="#居中" class="headerlink" title="居中"></a>居中</h5><p>&lt; center &gt;这是要居中的文本内容&lt; /center &gt;</p><center>居中内容</center><h5 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h5><p>&lt;u&gt;下划线&lt;/u&gt; 或者ctrl+u</p><p><u>下划线</u></p><h5 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h5><p><code>~~删除线~~</code></p><p><del>删除线</del></p><h5 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h5><p><code>**加粗字体** 或者 ctrl+b</code></p><p><strong>加粗字体</strong></p><h5 id="倾斜字体"><a href="#倾斜字体" class="headerlink" title="倾斜字体"></a>倾斜字体</h5><p><code>*倾斜字*  或者 ctrl+l</code></p><p><em>倾斜字</em></p><h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><p>![]()</p><h4 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h4><p><code>[显示文字](www.baidu.com) 或者 ctrl + k</code></p><p><a href="http://www.baidu.com" target="_blank" rel="noopener">百度一下</a></p><h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><p>``` 编程语言``` </p><p><code>或者 ctrl+shift+k</code></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> js = <span class="string">'js'</span></span><br></pre></td></tr></table></figure><h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><p><code>|1|2|3| 或者ctrl + t</code></p><table><thead><tr><th>1</th><th>2</th><th>3</th></tr></thead><tbody><tr><td></td><td></td><td></td></tr></tbody></table><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><h5 id="checkbox"><a href="#checkbox" class="headerlink" title="checkbox"></a>checkbox</h5><h5 id="未勾选-x-勾选"><a href="#未勾选-x-勾选" class="headerlink" title="- [ ] 未勾选 - [x] 勾选"></a><code>- [ ] 未勾选 - [x] 勾选</code></h5><ul><li><input checked="" disabled="" type="checkbox"> 勾选 </li></ul><h5 id="无序列表、有序列表"><a href="#无序列表、有序列表" class="headerlink" title="无序列表、有序列表"></a>无序列表、有序列表</h5><p><code>+,-,* 无序列表 或者 ctrl+shift+] 有序列表 ctrl+shift+[</code></p><ol><li>有序</li><li>有序</li></ol><ul><li>无序</li></ul><h4 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h4><p><code>*** 回车或者 --- 回车</code></p><hr><h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><p><code>&gt; + 空格 或者 ctrl+shift+q</code></p><blockquote><p>引用</p></blockquote><h4 id="表情"><a href="#表情" class="headerlink" title="表情"></a>表情</h4><p><code>:加单词</code></p><p>:artificial_satellite:</p><h4 id="快捷键一览"><a href="#快捷键一览" class="headerlink" title="快捷键一览"></a>快捷键一览</h4><p>一：菜单栏</p><p>文件：alt+F</p><p>编辑：alt+E</p><p>段落：alt+P</p><p>格式：alt+O</p><p>视图：alt+V</p><p>主题：alt+T</p><p>帮助：alt+H</p><p>二：文件</p><p>新建：Ctrl+N</p><p>新建窗口：Ctrl+Shift+N</p><p>打开：Ctrl+O</p><p>快速打开：Ctrl+P</p><p>保存：Ctrl+S</p><p>另存为：Ctrl+Shift+S</p><p>偏好：Ctrl+,</p><p>关闭：Ctrl+W</p><p>三：编辑</p><p>撤销：Ctrl+Z</p><p>重做：Ctrl+Y</p><p>剪切：Ctrl+X</p><p>复制：Ctrl+C</p><p>粘贴：Ctrl+V</p><p>复制为MarkDown：Ctrl+Shift+C</p><p>粘贴为纯文本：Ctrl+Shift+V</p><p>全选：Ctrl+A</p><p>选中当前行/句：Ctrl+L</p><p>选中当前格式文本：Ctrl+E</p><p>选中当前词：Ctrl+D</p><p>跳转到文首：Ctrl+Home</p><p>跳转到所选内容：Ctrl+J</p><p>跳转到文末：Ctrl+End</p><p>查找：Ctrl+F</p><p>查找下一个：F3</p><p>查找上一个：Shift+F3</p><p>替换：Ctrl+H</p><p>四：段落</p><p>标题：Ctrl+1/2/3/4/5</p><p>段落：Ctrl+0</p><p>增大标题级别：Ctrl+=</p><p>减少标题级别：Ctrl+-</p><p>表格：Ctrl+T</p><p>代码块：Ctrl+Shift+K</p><p>公式块：Ctrl+Shift+M</p><p>引用：Ctrl+Shift+Q</p><p>有序列表：Ctrl+Shift+[</p><p>无序列表：Ctrl+Shift+]</p><p>增加缩进：Ctrl+]</p><p>减少缩进：Ctrl+[</p><p>五：格式</p><p>加粗：Ctrl+B</p><p>斜体：Ctrl+I</p><p>下划线：Ctrl+U</p><p>代码：Ctrl+Shift+`</p><p>删除线：Alt+Shift+5</p><p>超链接：Ctrl+K</p><p>图像：Ctrl+Shift+I</p><p>清除样式：Ctrl+</p><p>六：视图</p><p>显示隐藏侧边栏：Ctrl+Shift+L</p><p>大纲视图：Ctrl+Shift+1</p><p>文档列表视图：Ctrl+Shift+2</p><p>文件树视图：Ctrl+Shift+3</p><p>源代码模式：Ctrl+/</p><p>专注模式：F8</p><p>打字机模式：F9</p><p>切换全屏：F11</p><p>实际大小：Ctrl+Shift+0</p><p>放大：Ctrl+Shift+=</p><p>缩小：Ctrl+Shift+-</p><p>应用内窗口切换：Ctrl+Tab</p><p>打开DevTools：Shift+F12</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h4&gt;&lt;p&gt;/# 一阶标题 或者快捷键ctrl+1&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;## 二阶标题 或者快捷键ctrl+2&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;&lt;c
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>随记：Vue + Element Ui 中清空form不触发校验规则</title>
